@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 
 import butterknife.ButterKnife;
 import eslyz.netdemo.annotation.ExtraInject;
@@ -19,6 +20,11 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected Context mContext;
 
+    public static final DisplayMetrics dm = new DisplayMetrics();
+
+    public int screenWidth;
+    public int screenHeight;
+
     @Override
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         //应用程序在后台时，activity可能被回收，
@@ -33,6 +39,9 @@ public abstract class BaseActivity extends AppCompatActivity {
         ActivityManager.saveThisActivity(this);
         ButterKnife.bind(this);
         ExtraInject.bind(this);
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        screenWidth = dm.widthPixels;
+        screenHeight = dm.heightPixels;
 
     }
 
