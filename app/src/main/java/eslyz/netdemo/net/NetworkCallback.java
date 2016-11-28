@@ -8,7 +8,7 @@ import eslyz.netdemo.widget.NetView;
 
 public abstract class NetworkCallback<T>  {
 
-    public void onSuccess(T t, NetView netView){
+    public void onSuccess(T result, NetView netView){
 
     }
 
@@ -16,7 +16,7 @@ public abstract class NetworkCallback<T>  {
 
     }
 
-    public void onSuccess(T t){
+    public void onSuccess(T result){
 
     }
 

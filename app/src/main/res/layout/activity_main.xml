@@ -2,11 +2,57 @@
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:id="@+id/activity_main"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context="eslyz.netdemo.MainActivity">
 
+	<LinearLayout
+		android:id="@+id/btn_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
 
+		<Button
+			android:id="@+id/btn_start"
+			android:text="开始请求"
+			android:textSize="20sp"
+			android:textColor="@color/blue_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<Button
+			android:id="@+id/btn_error"
+			android:text="出错测试"
+			android:textSize="20sp"
+			android:textColor="@color/blue_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+
+	</LinearLayout>
+
+
+	<android.support.v7.widget.CardView
+		android:id="@+id/card_view"
+		android:layout_below="@+id/btn_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		app:cardBackgroundColor="@color/blue_2"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="16dp">
+
+		<TextView
+			android:id="@+id/text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="10dp"
+			android:gravity="center"
+			android:textColor="@color/white_color"
+			android:textSize="20sp" />
+	</android.support.v7.widget.CardView>
 
 </RelativeLayout>

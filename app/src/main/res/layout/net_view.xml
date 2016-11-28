@@ -1,17 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/net_view"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+	android:layout_height="match_parent"
+	android:layout_gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/loading_error_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:background="@color/fauna_page_bg_color"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:visibility="gone"
+	>
+
+		<ImageView
+			android:id="@+id/loading_error_img"
+			android:layout_width="123.5dp"
+			android:layout_height="123.5dp"
+			android:layout_marginTop="67.5dp"
+			android:src="@drawable/ico_error"
+		/>
+
+		<TextView
+			android:id="@+id/loading_error_msg_text"
+			style="@style/black1_16_text_style"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/activity_horizontal_margin"
+			android:layout_marginRight="@dimen/activity_horizontal_margin"
+			android:layout_marginTop="27.5dp"
+			android:text="页面加载出错"/>
+
+		<Button
+			android:id="@+id/loading_error_btn"
+			style="@style/fauna_common_button_style"
+			android:layout_marginTop="45dp"
+			android:text="关闭此页"/>
+
+	</LinearLayout>
 
 
-	<com.github.ybq.android.spinkit.SpinKitView
-		xmlns:app="http://schemas.android.com/apk/res-auto"
-		android:id="@+id/spin_kit"
-		style="@style/SpinKitView.Large.Circle"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center"
-		app:SpinKit_Color="@color/colorAccent" />
+	<LinearLayout
+		android:id="@+id/progressView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_centerInParent="true"
+		android:background="@color/white_color"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="gone"
+	>
+
+		<ProgressBar
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:indeterminateDrawable="@drawable/progress_big"
+		/>
+
+		<TextView android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_marginTop="8dp"
+				  android:text="努力加载中，请稍候..."/>
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/progress"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:background="@color/transparent"
+		android:clickable="false"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="gone"
+	>
+
+		<ProgressBar
+			android:layout_width="36dp"
+			android:layout_height="36dp"
+			android:indeterminateDrawable="@drawable/progress_big"
+		/>
+
+		<!--页面中间转圈-->
+
+	</LinearLayout>
 
 </RelativeLayout>

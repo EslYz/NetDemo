@@ -14,6 +14,7 @@ public class Net {
     private static OkHttpClient okHttpClient;
     private static final String HOST_NAME = "";//
     private static final String BASE_URL = "";
+    private static final String TEST_API = "https://www.sqmall.com/";
 
     public static <T> T getApi(Class<T> cls) {
 
@@ -23,7 +24,7 @@ public class Net {
         okHttpClient = httpClient.build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(TEST_API)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(okHttpClient)

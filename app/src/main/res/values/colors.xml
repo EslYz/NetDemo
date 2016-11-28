@@ -1,6 +1,193 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="colorPrimary">#3F51B5</color>
-	<color name="colorPrimaryDark">#303F9F</color>
-	<color name="colorAccent">#FF4081</color>
+
+    <color name="fauna_page_bg_color">#eeeeee</color>
+
+    <color name="fauna_header_bg_color">#f8f8f8</color>
+
+    <color name="transparent33_black_1">#33212121</color>
+
+    <color name="transparent55">#50000000</color>
+
+    <color name="black_0_alpha60">#99000000</color>
+
+    <color name="black_0">#000000</color>
+
+    <color name="black_1">#212121</color>
+
+    <color name="black_2">#4d4d4d</color>
+
+    <color name="black_3">#666666</color>
+
+    <color name="black_4">#808080</color>
+
+    <color name="black_5">#999999</color>
+
+    <color name="black_6">#f2f2f2</color>
+
+    <color name="black_7">#eeeeee</color>
+
+    <color name="black_8">#f8f8f8</color>
+
+    <color name="black_9">#d7d8dd</color>
+
+    <color name="black_10">#e5e5e5</color>
+
+    <color name="black_11">#dcdee2</color>
+
+    <color name="black_12">#b3b3b3</color>
+
+    <color name="red_1">#eb413d</color>
+
+    <color name="red_2">#dd3737</color>
+
+    <color name="red_3">#f13736</color>
+
+    <color name="red_4">#b52424</color>
+
+    <color name="red_5">#ec584e</color>
+
+    <color name="red_6">#f44092</color>
+
+    <color name="red_7">#f96464</color>
+
+    <color name="red_7_login">#e95853</color>
+    
+    <color name="red_transparent_1">#e6db1d16</color>
+    
+    <color name="red_8">#ffe9e9</color>
+    
+    <color name="red_9">#f9dcdc</color>
+    
+    <color name="red_10">#ce0050</color>
+
+    <color name="red_11">#c60048</color>
+
+    <color name="orange_1">#fc8332</color>
+
+    <color name="orange_2">#f27019</color>
+
+    <color name="orange_3">#ed7524</color>
+
+    <color name="orange_4">#f2623f</color>
+
+    <color name="orange_5">#f79748</color>
+
+    <color name="orange_6">#f3b00d</color>
+
+    <color name="yellow_1">#e5ce83</color>
+
+    <color name="yellow_2">#ffffe5</color>
+
+    <color name="yellow_3">#ffe000</color>
+
+    <color name="yellow_4">#f9b60d</color>
+
+    <color name="yellow_5">#eaa307</color>
+
+    <color name="yellow_10">#f5f1db</color>
+
+    <color name="green_1">#28c6a8</color>
+
+    <color name="green_2">#0d9e82</color>
+
+    <color name="green_3">#6bb905</color>
+
+    <color name="green_4">#3a9b02</color>
+
+    <color name="green_5">#26a96d</color>
+
+    <color name="purple_1">#a451e5</color>
+
+    <color name="purple_2">#913de2</color>
+
+    <color name="purple_3">#50506a</color>
+
+    <color name="blue_1">#518cf4</color>
+
+    <color name="blue_2">#23b7e5</color>
+
+    <color name="blue_3">#4fc1e9</color>
+
+    <color name="blue_4">#7fcde5</color>
+
+    <color name="blue_5">#273744</color>
+
+    <color name="blue_6">#518cf4</color>
+
+    <color name="blue_7">#2137d6</color>
+
+    <color name="blue_8">#246bd1</color>
+
+    <color name="blue_9">#1b73af</color>
+
+    <color name="blue_10">#1baa9f</color>
+
+    <color name="white_color">#ffffff</color>
+
+    <color name="white_color_alpha_80">#ccffffff</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="black9_transparent">#f2eeeeee</color>
+
+    <color name="black_alpha99">#99999999</color>
+
+    <color name="choose_customer_color">#ef5830</color>
+
+    <color name="status_bar_color">#000000</color>
+    
+    <color name="red1_alpha_80">#cce24040</color>
+    
+    <color name="white_alpha_60">#99ffffff</color>
+
+    <!-- 全民找件 -->
+
+    <color name="a_red_1">#fe5b4c</color>
+
+    <color name="a_orange_1">#fc7945</color>
+
+    <color name="a_orange_2">#f2612f</color>
+    
+    <color name="a_green_1">#12c7b2</color>
+    
+    <color name="a_blue_1">#46afff</color>
+    
+    <color name="a_blue_2">#249fea</color>
+    
+    <color name="a_gray_1">#445b68</color>
+
+    <color name="a_gray_2">#587388</color>
+
+    <color name="a_gray_3">#7c899a</color>
+
+    <color name="a_gray_4">#b0b9c1</color>
+
+    <color name="a_gray_5">#f1f2f7</color>
+
+    <color name="a_black_1">#333333</color>
+
+    <color name="a_black_1_40">#40333333</color>
+
+    <color name="a_black_2">#4d4d4d</color>
+
+    <color name="a_black_3">#999999</color>
+
+    <color name="a_black_4">#cccccc</color>
+
+    <color name="a_black_5">#c4c4c4</color>
+
+    <color name="a_black_6">#f2f2f2</color>
+    
+    <color name="vip_zongdu">#411455</color>
+    
+    <color name="vip_baixing">#96a8ca</color>
+
+    <color name="vip_da_caizhu">#007d65</color>
+
+    <color name="vip_xiao_caizhu">#4975cb</color>
+
+    <color name="vip_zaixiang">#840228</color>
+
+    <color name="vip_zhifu">#905d1d</color>
+
 </resources>
